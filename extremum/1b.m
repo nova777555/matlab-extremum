@@ -1,0 +1,16 @@
+a=0;
+b=2*pi/3;
+a1= 1; b1=2;
+f=@(x) 1./(a1.*cos(x)+b1.*sin(x));
+subplot(2,2,1);
+var1=num2str(a1);
+var2=num2str(b1);
+t=['1/(a1*cos(x)+b1*sin(x)), \a1= ',var1,' \b1= ',var2];
+x=linspace(a,b,200);
+plot(x,f(x));
+grid on;
+xlabel('x'); ylabel('y'); title(t);
+xr=ginput(2);
+[x_m,y_m]=fminbnd(f,xr(1,1),xr(2,1));
+hold on;
+plot(x_m,y_m,'r*',xr(1,1),xr(1,2),'g*',xr(2,1),xr(2,2),'g*');
