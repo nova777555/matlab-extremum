@@ -1,6 +1,5 @@
 f=@(x,i)(cos(i.*x)-sin(i.*x)).^2;
 m=3;
-subplot(2,2,3);
 a=0;
 b=2*pi;
 t=['sum(cos(k.*x)-sin(k.*x)^2)'];
