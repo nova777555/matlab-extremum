@@ -2,7 +2,6 @@ a=0;
 b=2*pi/3;
 a1= 1; b1=2;
 f=@(x) 1./(a1.*cos(x)+b1.*sin(x));
-subplot(2,2,1);
 var1=num2str(a1);
 var2=num2str(b1);
 t=['1/(a1*cos(x)+b1*sin(x)), \a1= ',var1,' \b1= ',var2];
