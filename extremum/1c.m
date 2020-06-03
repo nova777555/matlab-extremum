@@ -1,5 +1,4 @@
 f=@(x) 2-abs(x).*exp(-abs(x-1));
-subplot(2,2,2);
 a=0;
 b=4;
 t=['2-abs(x)*exp(-abs(x-1)) '];
